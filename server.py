@@ -4,7 +4,7 @@ import csv
 app = Flask(__name__)
 
 @app.route('/')
-def portpolio(page_name):
+def hello(page_name):
     return render_template('index.html')
 
 
