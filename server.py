@@ -3,6 +3,10 @@ import csv
 
 app = Flask(__name__)
 
+@app.route('/')
+def portpolio(page_name):
+    return render_template('index.html')
+
 
 @app.route('/<string:page_name>')
 def portpolio(page_name):
